@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.decorator.CachedDocument;
+import org.example.decorator.CashedDocument;
 import org.example.decorator.MockedDocument;
 import org.example.decorator.TimedDocument;
 import org.example.decorator.Document;
@@ -14,7 +14,7 @@ public class Main {
         Document timedDocument = new TimedDocument(mockedDocument);
 
         // Apply CachedDocument Decorator
-        Document cachedTimedDocument = new CachedDocument(timedDocument);
+        Document cachedTimedDocument = new CashedDocument(timedDocument);
 
         // Usage
         String parsedText = cachedTimedDocument.parse();
