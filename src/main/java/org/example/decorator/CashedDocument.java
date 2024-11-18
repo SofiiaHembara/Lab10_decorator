@@ -1,8 +1,8 @@
 package org.example.decorator;
 
-public class CachedDocument extends AbstractDecorator {
+public class CashedDocument extends AbstractDecorator {
 
-    public CachedDocument(Document decoratedDocument) {
+    public CashedDocument(Document decoratedDocument) {
         super(decoratedDocument);
     }
 

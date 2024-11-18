@@ -11,7 +11,7 @@ import static org.mockito.Mockito.*;
 class CachedDocumentTest {
 
     private Document mockDocument;
-    private CachedDocument cachedDocument;
+    private CashedDocument cachedDocument;
 
     private DBConnection mockDBConnection;
 
@@ -25,7 +25,7 @@ class CachedDocumentTest {
         mockDBConnection = mock(DBConnection.class);
         DBConnection.setInstance(mockDBConnection);
 
-        cachedDocument = new CachedDocument(mockDocument);
+        cachedDocument = new CashedDocument(mockDocument);
     }
 
     @Test

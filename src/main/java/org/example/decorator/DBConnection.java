@@ -4,7 +4,7 @@ import lombok.SneakyThrows;
 
 import java.sql.*;
 
-public abstract class DBConnection {
+public class DBConnection {
     private static DBConnection dbConnection;
     private Connection connection;
 
@@ -62,6 +62,4 @@ public abstract class DBConnection {
         dbConnection = instance;
     }
 
-    @SneakyThrows
-    protected abstract void initializeDatabase();
 }
